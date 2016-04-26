@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		550610FF1B9A2708001A09FA /* kitKat.png in Resources */ = {isa = PBXBuildFile; fileRef = 550610FE1B9A2708001A09FA /* kitKat.png */; };
+		550611011B9A27C0001A09FA /* singleWelchs.png in Resources */ = {isa = PBXBuildFile; fileRef = 550611001B9A27C0001A09FA /* singleWelchs.png */; };
+		5506110D1B9A2A67001A09FA /* strongMint.png in Resources */ = {isa = PBXBuildFile; fileRef = 5506110C1B9A2A67001A09FA /* strongMint.png */; };
+		5506110F1B9A2AB2001A09FA /* ExcelWinterfreshMints.png in Resources */ = {isa = PBXBuildFile; fileRef = 5506110E1B9A2AB2001A09FA /* ExcelWinterfreshMints.png */; };
+		550611111B9A2BC4001A09FA /* doritos.png in Resources */ = {isa = PBXBuildFile; fileRef = 550611101B9A2BC4001A09FA /* doritos.png */; };
+		550611131B9A2C2E001A09FA /* arizonaIcedTea.png in Resources */ = {isa = PBXBuildFile; fileRef = 550611121B9A2C2E001A09FA /* arizonaIcedTea.png */; };
+		550611171B9A2DD3001A09FA /* fiji.png in Resources */ = {isa = PBXBuildFile; fileRef = 550611161B9A2DD3001A09FA /* fiji.png */; };
+		555B6B171B982E3B00691F8D /* ItemDrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 555B6B161B982E3B00691F8D /* ItemDrop.m */; };
 		556A84BD1B973C5500A265B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 556A84BC1B973C5500A265B7 /* main.m */; };
 		556A84C01B973C5500A265B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 556A84BF1B973C5500A265B7 /* AppDelegate.m */; };
 		556A84C31B973C5500A265B7 /* ZipCarTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 556A84C11B973C5500A265B7 /* ZipCarTest.xcdatamodeld */; };
@@ -15,6 +23,16 @@
 		556A84CB1B973C5500A265B7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 556A84CA1B973C5500A265B7 /* Images.xcassets */; };
 		556A84CE1B973C5500A265B7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 556A84CC1B973C5500A265B7 /* LaunchScreen.xib */; };
 		556A84DA1B973C5500A265B7 /* ZipCarTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 556A84D91B973C5500A265B7 /* ZipCarTestTests.m */; };
+		556A84EF1B974BF800A265B7 /* redglow.png in Resources */ = {isa = PBXBuildFile; fileRef = 556A84E41B974BF800A265B7 /* redglow.png */; };
+		556A84F01B974BF800A265B7 /* greenglow.png in Resources */ = {isa = PBXBuildFile; fileRef = 556A84E51B974BF800A265B7 /* greenglow.png */; };
+		556A84F61B974BF800A265B7 /* mtnDew.png in Resources */ = {isa = PBXBuildFile; fileRef = 556A84EB1B974BF800A265B7 /* mtnDew.png */; };
+		556A84F81B974BF800A265B7 /* laysClassic.png in Resources */ = {isa = PBXBuildFile; fileRef = 556A84ED1B974BF800A265B7 /* laysClassic.png */; };
+		556A84FC1B974F0800A265B7 /* ItemsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 556A84FB1B974F0800A265B7 /* ItemsCollectionViewController.m */; };
+		556A84FF1B97708300A265B7 /* ICVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 556A84FE1B97708300A265B7 /* ICVCViewController.m */; };
+		556A85021B97743900A265B7 /* ItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 556A85011B97743900A265B7 /* ItemCollectionViewCell.m */; };
+		556A85041B97749300A265B7 /* backCard.png in Resources */ = {isa = PBXBuildFile; fileRef = 556A85031B97749300A265B7 /* backCard.png */; };
+		556A850A1B97817000A265B7 /* Items+Loaditems.m in Sources */ = {isa = PBXBuildFile; fileRef = 556A85091B97817000A265B7 /* Items+Loaditems.m */; };
+		556A850D1B97A06300A265B7 /* Items.m in Sources */ = {isa = PBXBuildFile; fileRef = 556A850C1B97A06300A265B7 /* Items.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +46,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		550610FE1B9A2708001A09FA /* kitKat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kitKat.png; sourceTree = "<group>"; };
+		550611001B9A27C0001A09FA /* singleWelchs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = singleWelchs.png; sourceTree = "<group>"; };
+		5506110C1B9A2A67001A09FA /* strongMint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = strongMint.png; sourceTree = "<group>"; };
+		5506110E1B9A2AB2001A09FA /* ExcelWinterfreshMints.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ExcelWinterfreshMints.png; sourceTree = "<group>"; };
+		550611101B9A2BC4001A09FA /* doritos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doritos.png; sourceTree = "<group>"; };
+		550611121B9A2C2E001A09FA /* arizonaIcedTea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arizonaIcedTea.png; sourceTree = "<group>"; };
+		550611161B9A2DD3001A09FA /* fiji.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fiji.png; sourceTree = "<group>"; };
+		555B6B151B982E3B00691F8D /* ItemDrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDrop.h; sourceTree = "<group>"; };
+		555B6B161B982E3B00691F8D /* ItemDrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDrop.m; sourceTree = "<group>"; };
 		556A84B71B973C5500A265B7 /* ZipCarTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZipCarTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		556A84BB1B973C5500A265B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		556A84BC1B973C5500A265B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,6 +69,21 @@
 		556A84D31B973C5500A265B7 /* ZipCarTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZipCarTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		556A84D81B973C5500A265B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		556A84D91B973C5500A265B7 /* ZipCarTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZipCarTestTests.m; sourceTree = "<group>"; };
+		556A84E41B974BF800A265B7 /* redglow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redglow.png; sourceTree = "<group>"; };
+		556A84E51B974BF800A265B7 /* greenglow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenglow.png; sourceTree = "<group>"; };
+		556A84EB1B974BF800A265B7 /* mtnDew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mtnDew.png; sourceTree = "<group>"; };
+		556A84ED1B974BF800A265B7 /* laysClassic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = laysClassic.png; sourceTree = "<group>"; };
+		556A84FA1B974F0800A265B7 /* ItemsCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemsCollectionViewController.h; sourceTree = "<group>"; };
+		556A84FB1B974F0800A265B7 /* ItemsCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsCollectionViewController.m; sourceTree = "<group>"; };
+		556A84FD1B97708300A265B7 /* ICVCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICVCViewController.h; sourceTree = "<group>"; };
+		556A84FE1B97708300A265B7 /* ICVCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICVCViewController.m; sourceTree = "<group>"; };
+		556A85001B97743900A265B7 /* ItemCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCollectionViewCell.h; sourceTree = "<group>"; };
+		556A85011B97743900A265B7 /* ItemCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCollectionViewCell.m; sourceTree = "<group>"; };
+		556A85031B97749300A265B7 /* backCard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backCard.png; sourceTree = "<group>"; };
+		556A85081B97817000A265B7 /* Items+Loaditems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Items+Loaditems.h"; sourceTree = "<group>"; };
+		556A85091B97817000A265B7 /* Items+Loaditems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Items+Loaditems.m"; sourceTree = "<group>"; };
+		556A850B1B97A06300A265B7 /* Items.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Items.h; path = ../Items.h; sourceTree = "<group>"; };
+		556A850C1B97A06300A265B7 /* Items.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Items.m; path = ../Items.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +129,19 @@
 				556A84BF1B973C5500A265B7 /* AppDelegate.m */,
 				556A84C41B973C5500A265B7 /* ViewController.h */,
 				556A84C51B973C5500A265B7 /* ViewController.m */,
+				555B6B151B982E3B00691F8D /* ItemDrop.h */,
+				555B6B161B982E3B00691F8D /* ItemDrop.m */,
+				556A84FA1B974F0800A265B7 /* ItemsCollectionViewController.h */,
+				556A84FB1B974F0800A265B7 /* ItemsCollectionViewController.m */,
+				556A84FD1B97708300A265B7 /* ICVCViewController.h */,
+				556A84FE1B97708300A265B7 /* ICVCViewController.m */,
+				556A85001B97743900A265B7 /* ItemCollectionViewCell.h */,
+				556A85011B97743900A265B7 /* ItemCollectionViewCell.m */,
+				556A850B1B97A06300A265B7 /* Items.h */,
+				556A850C1B97A06300A265B7 /* Items.m */,
+				556A85081B97817000A265B7 /* Items+Loaditems.h */,
+				556A85091B97817000A265B7 /* Items+Loaditems.m */,
+				556A84E31B974BD700A265B7 /* Images */,
 				556A84C71B973C5500A265B7 /* Main.storyboard */,
 				556A84CA1B973C5500A265B7 /* Images.xcassets */,
 				556A84CC1B973C5500A265B7 /* LaunchScreen.xib */,
@@ -120,6 +175,25 @@
 				556A84D81B973C5500A265B7 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		556A84E31B974BD700A265B7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				556A84E41B974BF800A265B7 /* redglow.png */,
+				550611101B9A2BC4001A09FA /* doritos.png */,
+				550610FE1B9A2708001A09FA /* kitKat.png */,
+				550611001B9A27C0001A09FA /* singleWelchs.png */,
+				5506110E1B9A2AB2001A09FA /* ExcelWinterfreshMints.png */,
+				550611121B9A2C2E001A09FA /* arizonaIcedTea.png */,
+				556A85031B97749300A265B7 /* backCard.png */,
+				556A84E51B974BF800A265B7 /* greenglow.png */,
+				5506110C1B9A2A67001A09FA /* strongMint.png */,
+				556A84EB1B974BF800A265B7 /* mtnDew.png */,
+				550611161B9A2DD3001A09FA /* fiji.png */,
+				556A84ED1B974BF800A265B7 /* laysClassic.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,7 +240,7 @@
 		556A84AF1B973C5500A265B7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Vijit Munjal";
 				TargetAttributes = {
 					556A84B61B973C5500A265B7 = {
@@ -202,9 +276,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				550611111B9A2BC4001A09FA /* doritos.png in Resources */,
+				556A84EF1B974BF800A265B7 /* redglow.png in Resources */,
 				556A84C91B973C5500A265B7 /* Main.storyboard in Resources */,
+				5506110D1B9A2A67001A09FA /* strongMint.png in Resources */,
+				556A84F01B974BF800A265B7 /* greenglow.png in Resources */,
 				556A84CE1B973C5500A265B7 /* LaunchScreen.xib in Resources */,
 				556A84CB1B973C5500A265B7 /* Images.xcassets in Resources */,
+				556A84F81B974BF800A265B7 /* laysClassic.png in Resources */,
+				5506110F1B9A2AB2001A09FA /* ExcelWinterfreshMints.png in Resources */,
+				550611011B9A27C0001A09FA /* singleWelchs.png in Resources */,
+				550610FF1B9A2708001A09FA /* kitKat.png in Resources */,
+				550611171B9A2DD3001A09FA /* fiji.png in Resources */,
+				556A84F61B974BF800A265B7 /* mtnDew.png in Resources */,
+				550611131B9A2C2E001A09FA /* arizonaIcedTea.png in Resources */,
+				556A85041B97749300A265B7 /* backCard.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,8 +308,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				556A84FC1B974F0800A265B7 /* ItemsCollectionViewController.m in Sources */,
+				556A84FF1B97708300A265B7 /* ICVCViewController.m in Sources */,
+				556A850D1B97A06300A265B7 /* Items.m in Sources */,
 				556A84C01B973C5500A265B7 /* AppDelegate.m in Sources */,
 				556A84BD1B973C5500A265B7 /* main.m in Sources */,
+				555B6B171B982E3B00691F8D /* ItemDrop.m in Sources */,
+				556A850A1B97817000A265B7 /* Items+Loaditems.m in Sources */,
+				556A85021B97743900A265B7 /* ItemCollectionViewCell.m in Sources */,
 				556A84C61B973C5500A265B7 /* ViewController.m in Sources */,
 				556A84C31B973C5500A265B7 /* ZipCarTest.xcdatamodeld in Sources */,
 			);
@@ -288,6 +380,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -353,6 +446,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ZipCarTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vijitMunjal.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -363,6 +457,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ZipCarTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vijitMunjal.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -381,6 +476,7 @@
 				);
 				INFOPLIST_FILE = ZipCarTestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vijitMunjal.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZipCarTest.app/ZipCarTest";
 			};
@@ -396,6 +492,7 @@
 				);
 				INFOPLIST_FILE = ZipCarTestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vijitMunjal.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZipCarTest.app/ZipCarTest";
 			};
@@ -420,6 +517,7 @@
 				556A84DF1B973C5500A265B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		556A84E01B973C5500A265B7 /* Build configuration list for PBXNativeTarget "ZipCarTestTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +526,7 @@
 				556A84E21B973C5500A265B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

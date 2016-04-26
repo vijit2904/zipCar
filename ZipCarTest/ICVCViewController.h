@@ -10,4 +10,9 @@
 
 @interface ICVCViewController : ItemsCollectionViewController
 
+
+@property(strong, nonatomic) NSManagedObjectContext *managedContext;
+
+
+
 @end

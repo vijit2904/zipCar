@@ -10,4 +10,9 @@
 
 @interface ItemCollectionViewCell : UICollectionViewCell
 
+@property (weak, nonatomic) IBOutlet UIImageView *itemImage;
+@property (weak, nonatomic) IBOutlet UILabel *itemPrice;
+@property (weak, nonatomic) IBOutlet UILabel *itemQty;
+@property (weak, nonatomic) IBOutlet UIImageView *imageRefill;
+
 @end

@@ -28,7 +28,7 @@
     
     return self;
 }
-
+// lazy Load GravityBehavior
 -(UIGravityBehavior*)gravity{
     if (!_gravity) {
         _gravity = [[UIGravityBehavior alloc]init];
@@ -36,6 +36,7 @@
     }
     return _gravity;
 }
+// lazy load Collision Behavior
 -(UICollisionBehavior*)collider{
     if (!_collider) {
         _collider = [[UICollisionBehavior alloc]init];
@@ -43,6 +44,7 @@
     }
     return _collider;
 }
+// lazy load Dynamic Item Behavior
 -(UIDynamicItemBehavior*)animationOptions{
     if (!_animationOptions) {
         _animationOptions = [[UIDynamicItemBehavior alloc]init];

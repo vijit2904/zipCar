@@ -7,6 +7,7 @@
 //
 
 #import "ItemsCollectionViewController.h"
+#import  "ItemCollectionViewCell.h"
 
 @interface ItemsCollectionViewController ()
 
@@ -14,16 +15,8 @@
 
 @implementation ItemsCollectionViewController
 
-static NSString * const reuseIdentifier = @"Cell";
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Register cell classes
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
     // Do any additional setup after loading the view.
 }
@@ -32,6 +25,21 @@ static NSString * const reuseIdentifier = @"Cell";
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+// lazy load the image array with image names
+-(NSArray *)imageArray{
+    
+    if (!_imageArray) {
+        _imageArray = [[NSArray alloc]init];
+    
+    _imageArray = @[@"kitKat",@"singleWelchs",@"ExcelWinterfreshMints",
+                    @"fiji",@"arizonaIcedTea",@"mtnDew",
+                    @"doritos",@"laysClassic",@"strongMint"];
+    }
+    return _imageArray;
+    
+}
+
 
 /*
 #pragma mark - Navigation
@@ -43,56 +51,67 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 */
 
+#pragma mark - Fetching
+// get items from the data base
+-(void)performFetch{
+    if (self.fetchedResultsController) {
+        NSError *error;
+        [self.fetchedResultsController performFetch:&error];
+        if (error) {
+            NSLog(@"%@",error.localizedDescription);
+            
+        }
+        [self.collectionView reloadData];
+        
+    }
+}
+// set the Fetched Results Controller
+- (void)setFetchedResultsController:(NSFetchedResultsController *)newfrc
+{
+    NSFetchedResultsController *oldfrc = _fetchedResultsController;
+    if (newfrc != oldfrc) {
+        _fetchedResultsController = newfrc;
+        newfrc.delegate = self;
+        if (newfrc) {
+            [self performFetch];
+        } else {
+            [self.collectionView reloadData];
+        }
+    }
+}
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-#warning Incomplete method implementation -- Return the number of sections
-    return 0;
+
+    return 1;
 }
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-#warning Incomplete method implementation -- Return the number of items in the section
-    return 0;
+
+    return self.imageArray.count;
 }
 
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-    
-    // Configure the cell
-    
-    return cell;
-}
 
 #pragma mark <UICollectionViewDelegate>
 
-/*
-// Uncomment this method to specify if the specified item should be highlighted during tracking
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
-	return YES;
-}
-*/
+// Notifies if fetched object has been changed due to an add, remove, move, or update.
+#pragma mark - NSFetchedResultsControllerDelegate
 
-/*
-// Uncomment this method to specify if the specified item should be selected
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    return YES;
-}
-*/
-
-/*
-// Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
-	return NO;
+-(void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject atIndexPath:(NSIndexPath *)indexPath
+    forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath *)newIndexPath{
+    switch (type) {
+            
+            // only care about update
+        case NSFetchedResultsChangeUpdate:
+            [self.collectionView reloadItemsAtIndexPaths:@[indexPath]];
+            break;
+            
+        default:
+            break;
+    }
 }
 
-- (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	return NO;
-}
 
-- (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	
-}
-*/
 
 @end

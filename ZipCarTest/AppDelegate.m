@@ -7,9 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "Items+Loaditems.h"
 
 @interface AppDelegate ()
-
+// Array of items for vending machine 
+@property (strong, nonatomic) NSArray *vendingitems;
 @end
 
 @implementation AppDelegate
@@ -17,8 +19,32 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+   
+    // this will fill add VendingItems array to the data base
+    [Items loadItemsIntoVendingMachine:self.vendingitems inManagedObjectContext:self.managedObjectContext];
+
     return YES;
 }
+
+
+-(NSArray *)vendingitems{
+    if (!_vendingitems) {
+        _vendingitems = [[NSArray alloc]init];
+        _vendingitems = @[@{@"name":@"Snack 1",@"price":@"1.00",@"Qty":@"10"},
+                          @{@"name":@"Snack 2",@"price":@"1.00",@"Qty":@"10"},
+                          @{@"name":@"Snack 3",@"price":@"1.00",@"Qty":@"10"},
+                          @{@"name":@"Snack 4",@"price":@"1.00",@"Qty":@"10"},
+                          @{@"name":@"Snack 5",@"price":@"1.00",@"Qty":@"10"},
+                          @{@"name":@"Snack 6",@"price":@"1.00",@"Qty":@"10"},
+                          @{@"name":@"Snack 7",@"price":@"1.00",@"Qty":@"10"},
+                          @{@"name":@"Snack 8",@"price":@"1.00",@"Qty":@"10"},
+                          @{@"name":@"Snack 9",@"price":@"1.00",@"Qty":@"10"}
+                           ];
+    }
+    return _vendingitems;
+}
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -105,9 +131,11 @@
         return nil;
     }
     _managedObjectContext = [[NSManagedObjectContext alloc] init];
+    
     [_managedObjectContext setPersistentStoreCoordinator:coordinator];
     return _managedObjectContext;
 }
+
 
 #pragma mark - Core Data Saving support
 

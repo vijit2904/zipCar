@@ -8,12 +8,24 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "AppDelegate.h"
+#import "ICVCViewController.h"
 
 @interface ZipCarTestTests : XCTestCase
-
+@property (nonatomic, strong)ICVCViewController *collection;
 @end
 
 @implementation ZipCarTestTests
+
+-(ICVCViewController*)collection{
+    if (!_collection) {
+        _collection = [[ICVCViewController alloc]init];
+        AppDelegate* appDelegate = [[UIApplication sharedApplication] delegate];
+        _collection.managedContext = [appDelegate managedObjectContext];
+        
+    }
+    return _collection;
+}
 
 - (void)setUp {
     [super setUp];
@@ -25,9 +37,9 @@
     [super tearDown];
 }
 
-- (void)testExample {
+- (void)testCollectionViewHasItems {
     // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+    XCTAssert([self.collection.fetchedResultsController.fetchedObjects count] > 0, @"Pass");
 }
 
 - (void)testPerformanceExample {
